@@ -75,7 +75,7 @@ class comunicacaoBrowser implements Runnable {
 
 	public static void main(String args[]) {
 		 try {
-			 ServerSocket s = new ServerSocket(8080);
+			 ServerSocket s = new ServerSocket(50135);
 			 for (;;) {
 				 comunicacaoBrowser w = new comunicacaoBrowser(s.accept());
 				 Thread thr = new Thread(w);
